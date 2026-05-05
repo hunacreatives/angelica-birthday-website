@@ -167,7 +167,7 @@ export default function RSVP() {
 
               <div>
                 <label htmlFor="rsvp-guests" className="font-handwritten text-base text-[#8B9A6E] block mb-1.5">
-                  Number of Guests
+                  Will you be bringing anyone?
                 </label>
                 <select
                   id="rsvp-guests"
@@ -176,9 +176,9 @@ export default function RSVP() {
                   onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-white/50 backdrop-blur-sm border border-[#D4727A]/15 focus:border-[#D4727A]/40 focus:outline-none focus:ring-2 focus:ring-[#D4727A]/10 text-sm text-charcoal transition-all cursor-pointer font-sans"
                 >
-                  <option value="1">Just me</option>
-                  <option value="2">1 guest</option>
-                  <option value="3">2 guests</option>
+                  <option value="1">Nope, just me!</option>
+                  <option value="2">Yes, I'm bringing 1 guest</option>
+                  <option value="3">Yes, I'm bringing 2 guests</option>
                 </select>
               </div>
 
