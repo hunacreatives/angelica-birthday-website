@@ -76,7 +76,7 @@ export default function CinematicContent() {
 
         {/* POLAROID PHOTOS */}
         <div
-          className={`flex flex-row items-center justify-center gap-1 md:gap-2 mt-10 md:mt-14 transition-all duration-[1500ms] ease-out ${
+          className={`flex flex-row items-center justify-center gap-0 mt-10 md:mt-14 transition-all duration-[1500ms] ease-out ${
             showHeadline
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-6'
@@ -85,11 +85,22 @@ export default function CinematicContent() {
         >
           {/* Left Photo */}
           <div
-            className="transition-all duration-500"
-            style={{ transform: `rotate(-2deg) ${photoHover === 0 ? 'translateY(-6px) rotate(0deg)' : ''}` }}
+            className="relative transition-all duration-500"
+            style={{ transform: `rotate(-2deg) ${photoHover === 0 ? 'translateY(-10px) rotate(0deg) scale(1.04)' : ''}` }}
             onMouseEnter={() => setPhotoHover(0)}
             onMouseLeave={() => setPhotoHover(null)}
           >
+            {/* Party Hat Sticker */}
+            <div
+              className="absolute -top-5 left-3 z-20 w-11 h-13 md:w-16 md:h-20 lg:w-20 lg:h-24 transition-transform duration-500"
+              style={{ transform: `rotate(-12deg) ${photoHover === 0 ? 'scale(1.15)' : 'scale(1)'}` }}
+            >
+              <img
+                src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/70b431ef-41c1-4f31-91be-387273c64dde_Party-Hat.png?v=a03fc819403495eb1c7404a0220d2d0f"
+                alt="Party hat"
+                className="w-full h-full object-contain drop-shadow-md"
+              />
+            </div>
             <img
               src="/photo-1.png"
               alt="Gel's photo"
@@ -99,8 +110,8 @@ export default function CinematicContent() {
 
           {/* Right Photo */}
           <div
-            className="transition-all duration-500"
-            style={{ transform: `rotate(2deg) ${photoHover === 1 ? 'translateY(-6px) rotate(0deg)' : ''}` }}
+            className="relative transition-all duration-500"
+            style={{ transform: `rotate(2deg) ${photoHover === 1 ? 'translateY(-10px) rotate(0deg) scale(1.04)' : ''}` }}
             onMouseEnter={() => setPhotoHover(1)}
             onMouseLeave={() => setPhotoHover(null)}
           >
@@ -109,6 +120,17 @@ export default function CinematicContent() {
               alt="Gel's photo"
               className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
             />
+            {/* Heart Sticker */}
+            <div
+              className="absolute -bottom-1 -right-3 z-20 w-9 h-9 md:w-12 md:h-12 lg:w-16 lg:h-16 transition-transform duration-500"
+              style={{ transform: `rotate(8deg) ${photoHover === 1 ? 'scale(1.2)' : 'scale(1)'}` }}
+            >
+              <img
+                src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/003413c6-11e3-47f6-b4ce-b6db0078528d_Heart.png?v=2daccf140043aa5d7cdac026db038624"
+                alt="Heart sticker"
+                className="w-full h-full object-contain drop-shadow-sm"
+              />
+            </div>
           </div>
         </div>
 
