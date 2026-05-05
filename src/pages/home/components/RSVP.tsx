@@ -72,7 +72,7 @@ export default function RSVP() {
         {/* DRESS CODE — always visible unless submitted */}
         {!submitted && (
           <div
-            className={`-mt-8 md:-mt-10 text-center mb-10 transition-all duration-[1500ms] ease-out ${
+            className={`-mt-16 md:-mt-20 text-center mb-10 transition-all duration-[1500ms] ease-out ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >
@@ -80,7 +80,7 @@ export default function RSVP() {
               Dress Code
             </p>
             <p
-              className="font-handwritten text-xl sm:text-2xl md:text-[26px] lg:text-3xl text-[#8B9A6E] leading-[1.5] max-w-[460px] lg:max-w-[560px] mx-auto"
+              className="font-handwritten text-xl sm:text-2xl md:text-[26px] lg:text-3xl text-[#8B9A6E] leading-[1.5] max-w-[460px] lg:max-w-[560px] mx-auto px-8 sm:px-0"
               style={{ transform: 'rotate(-0.5deg)', textShadow: '0 1px 8px rgba(139,154,110,0.1)' }}
             >
               Think soft pastels, garden florals, or anything that feels like a warm spring afternoon ✿
