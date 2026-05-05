@@ -40,7 +40,7 @@ export default function RSVP() {
       await fetch('https://script.google.com/macros/s/AKfycbzqLQty1qfnHNkZJX0RxRG0-VU8OaO7LWcwXFweLv4ti0008Liapj5C5DGDv_cvbKds/exec', {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(formData),
       });
 
