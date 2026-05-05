@@ -92,7 +92,7 @@ export default function CinematicContent() {
           >
             {/* Party Hat Sticker */}
             <div
-              className="absolute top-1 right-[140px] z-20 w-11 h-13 md:w-16 md:h-20 lg:w-20 lg:h-24 transition-transform duration-500"
+              className="absolute top-3 right-[152px] z-20 w-11 h-13 md:w-16 md:h-20 lg:w-20 lg:h-24 transition-transform duration-500"
               style={{ transform: `rotate(-12deg) ${photoHover === 0 ? 'scale(1.15)' : 'scale(1)'}` }}
             >
               <img
