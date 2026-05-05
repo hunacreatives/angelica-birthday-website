@@ -102,7 +102,7 @@ export default function CinematicContent() {
               />
             </div>
             <img
-              src="/photo-1.png"
+              src="/photo-2.png"
               alt="Gel's photo"
               className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
             />
@@ -116,7 +116,7 @@ export default function CinematicContent() {
             onMouseLeave={() => setPhotoHover(null)}
           >
             <img
-              src="/photo-2.png"
+              src="/photo-1.png"
               alt="Gel's photo"
               className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
             />
