@@ -20,8 +20,7 @@ export default function AnimatedBackground() {
     const video = videoRef.current;
     if (!video) return;
 
-    // Wait for video metadata to know duration
-    const handleLoadedMetadata = () => {
+    const setupScrollScrub = () => {
       const duration = video.duration;
 
       const handleScroll = () => {
@@ -31,18 +30,36 @@ export default function AnimatedBackground() {
         video.currentTime = scrollPercent * duration;
       };
 
-      // Run once on mount to set initial frame
       handleScroll();
-
       window.addEventListener('scroll', handleScroll, { passive: true });
       return () => window.removeEventListener('scroll', handleScroll);
     };
 
+    // iOS Safari requires a play() call before currentTime is seekable
+    const initVideo = () => {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            video.pause();
+            video.currentTime = 0;
+            return setupScrollScrub();
+          })
+          .catch(() => {
+            // Autoplay blocked — fall back to direct scrub setup
+            return setupScrollScrub();
+          });
+      } else {
+        video.pause();
+        return setupScrollScrub();
+      }
+    };
+
     if (video.readyState >= 1) {
-      return handleLoadedMetadata();
+      return initVideo() as unknown as (() => void);
     } else {
-      video.addEventListener('loadedmetadata', handleLoadedMetadata);
-      return () => video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      video.addEventListener('loadedmetadata', initVideo, { once: true });
+      return () => video.removeEventListener('loadedmetadata', initVideo);
     }
   }, []);
 
@@ -120,6 +137,7 @@ export default function AnimatedBackground() {
       <video
         ref={videoRef}
         muted
+        autoPlay
         playsInline
         preload="auto"
         className="fixed inset-0 z-0 w-full h-full object-cover md:hidden"
