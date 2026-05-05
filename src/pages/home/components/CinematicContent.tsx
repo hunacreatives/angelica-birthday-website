@@ -110,7 +110,7 @@ export default function CinematicContent() {
 
           {/* Right Photo */}
           <div
-            className="relative transition-all duration-500"
+            className="relative transition-all duration-500 -ml-10 sm:-ml-12 md:ml-0"
             style={{ transform: `rotate(2deg) ${photoHover === 1 ? 'translateY(-10px) rotate(0deg) scale(1.04)' : ''}` }}
             onMouseEnter={() => setPhotoHover(1)}
             onMouseLeave={() => setPhotoHover(null)}
