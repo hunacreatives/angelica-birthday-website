@@ -79,7 +79,10 @@ export default function RSVP() {
             <p className="font-script text-lg md:text-xl text-[#8B9A6E] mb-2">
               Dress Code
             </p>
-            <p className="font-script text-sm md:text-base text-[#8B9A6E]/80 px-10 md:px-16">
+            <p
+              className="font-handwritten text-xl sm:text-2xl md:text-[26px] lg:text-3xl text-[#8B9A6E] leading-[1.5] max-w-[460px] lg:max-w-[560px] mx-auto"
+              style={{ transform: 'rotate(-0.5deg)', textShadow: '0 1px 8px rgba(139,154,110,0.1)' }}
+            >
               Think soft pastels, garden florals, or anything that feels like a warm spring afternoon ✿
             </p>
           </div>
