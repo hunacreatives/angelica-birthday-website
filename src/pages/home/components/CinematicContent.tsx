@@ -122,7 +122,7 @@ export default function CinematicContent() {
             />
             {/* Heart Sticker */}
             <div
-              className="absolute -bottom-1 -right-3 z-20 w-14 h-14 md:w-[72px] md:h-[72px] lg:w-24 lg:h-24 transition-transform duration-500"
+              className="absolute -bottom-1 right-6 z-20 w-14 h-14 md:w-[72px] md:h-[72px] lg:w-24 lg:h-24 transition-transform duration-500"
               style={{ transform: `rotate(8deg) ${photoHover === 1 ? 'scale(1.2)' : 'scale(1)'}` }}
             >
               <img
