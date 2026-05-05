@@ -76,7 +76,7 @@ export default function CinematicContent() {
 
         {/* POLAROID PHOTOS */}
         <div
-          className={`flex flex-row items-center justify-center gap-4 md:gap-6 mt-10 md:mt-14 transition-all duration-[1500ms] ease-out ${
+          className={`flex flex-row items-center justify-center gap-1 md:gap-2 mt-10 md:mt-14 transition-all duration-[1500ms] ease-out ${
             showHeadline
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-6'
@@ -93,7 +93,7 @@ export default function CinematicContent() {
             <img
               src="/photo-1.png"
               alt="Gel's photo"
-              className="w-40 sm:w-44 md:w-56 lg:w-72 drop-shadow-lg"
+              className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
             />
           </div>
 
@@ -107,7 +107,7 @@ export default function CinematicContent() {
             <img
               src="/photo-2.png"
               alt="Gel's photo"
-              className="w-40 sm:w-44 md:w-56 lg:w-72 drop-shadow-lg"
+              className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
             />
           </div>
         </div>
