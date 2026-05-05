@@ -35,22 +35,22 @@ export default function AnimatedBackground() {
       return () => window.removeEventListener('scroll', handleScroll);
     };
 
-    // iOS Safari requires a play() call before currentTime is seekable
+    // iOS Safari requires a play() call before currentTime is seekable.
+    // We set playbackRate=0 instead of pause() so iOS never shows the native play button overlay.
     const initVideo = () => {
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise
           .then(() => {
-            video.pause();
+            video.playbackRate = 0;
             video.currentTime = 0;
             return setupScrollScrub();
           })
           .catch(() => {
-            // Autoplay blocked — fall back to direct scrub setup
             return setupScrollScrub();
           });
       } else {
-        video.pause();
+        video.playbackRate = 0;
         return setupScrollScrub();
       }
     };
