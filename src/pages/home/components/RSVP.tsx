@@ -72,14 +72,14 @@ export default function RSVP() {
         {/* DRESS CODE — always visible unless submitted */}
         {!submitted && (
           <div
-            className={`-mt-3 md:-mt-4 text-center mb-10 transition-all duration-[1500ms] ease-out ${
+            className={`-mt-8 md:-mt-10 text-center mb-10 transition-all duration-[1500ms] ease-out ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >
-            <p className="font-handwritten text-lg md:text-xl text-[#8B9A6E] mb-2">
+            <p className="font-script text-lg md:text-xl text-[#8B9A6E] mb-2">
               Dress Code
             </p>
-            <p className="font-sans text-sm md:text-base text-[#8B9A6E]/80 italic">
+            <p className="font-script text-sm md:text-base text-[#8B9A6E]/80 px-10 md:px-16">
               Think soft pastels, garden florals, or anything that feels like a warm spring afternoon ✿
             </p>
           </div>
