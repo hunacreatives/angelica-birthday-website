@@ -76,7 +76,7 @@ export default function CinematicContent() {
 
         {/* POLAROID PHOTOS */}
         <div
-          className={`flex flex-row items-center justify-center gap-0 mt-10 md:mt-14 transition-all duration-[1500ms] ease-out ${
+          className={`flex flex-row items-center justify-center gap-0 mt-16 md:mt-20 transition-all duration-[1500ms] ease-out ${
             showHeadline
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-6'
@@ -104,7 +104,7 @@ export default function CinematicContent() {
             <img
               src="/photo-2.png"
               alt="Gel's photo"
-              className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
+              className="w-64 sm:w-72 md:w-80 lg:w-[26rem] drop-shadow-lg"
             />
           </div>
 
@@ -118,7 +118,7 @@ export default function CinematicContent() {
             <img
               src="/photo-1.png"
               alt="Gel's photo"
-              className="w-52 sm:w-60 md:w-72 lg:w-96 drop-shadow-lg"
+              className="w-64 sm:w-72 md:w-80 lg:w-[26rem] drop-shadow-lg"
             />
             {/* Heart Sticker */}
             <div
