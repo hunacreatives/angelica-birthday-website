@@ -1,1 +1,5 @@
+node_modules
+out
 .vercel
+*.local
+auto-imports.d.ts
