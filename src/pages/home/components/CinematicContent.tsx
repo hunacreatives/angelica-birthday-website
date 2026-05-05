@@ -92,7 +92,7 @@ export default function CinematicContent() {
           >
             {/* Party Hat Sticker */}
             <div
-              className="absolute top-3 right-[152px] z-20 w-11 h-13 md:w-16 md:h-20 lg:w-20 lg:h-24 transition-transform duration-500"
+              className="absolute top-3 right-[152px] z-20 w-16 h-20 md:w-24 md:h-32 lg:w-28 lg:h-36 transition-transform duration-500"
               style={{ transform: `rotate(-12deg) ${photoHover === 0 ? 'scale(1.15)' : 'scale(1)'}` }}
             >
               <img
@@ -122,7 +122,7 @@ export default function CinematicContent() {
             />
             {/* Heart Sticker */}
             <div
-              className="absolute -bottom-1 -right-3 z-20 w-9 h-9 md:w-12 md:h-12 lg:w-16 lg:h-16 transition-transform duration-500"
+              className="absolute -bottom-1 -right-3 z-20 w-14 h-14 md:w-[72px] md:h-[72px] lg:w-24 lg:h-24 transition-transform duration-500"
               style={{ transform: `rotate(8deg) ${photoHover === 1 ? 'scale(1.2)' : 'scale(1)'}` }}
             >
               <img
