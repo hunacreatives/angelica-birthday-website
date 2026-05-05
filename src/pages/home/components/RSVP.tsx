@@ -36,22 +36,16 @@ export default function RSVP() {
     e.preventDefault();
     setSubmitting(true);
 
-    const formElement = e.target as HTMLFormElement;
-    const formDataObj = new FormData(formElement);
-
     try {
-      const response = await fetch('https://readdy.ai/api/form/d7snr3sdj3knvn2p3160', {
+      await fetch('https://script.google.com/macros/s/AKfycbzqLQty1qfnHNkZJX0RxRG0-VU8OaO7LWcwXFweLv4ti0008Liapj5C5DGDv_cvbKds/exec', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formDataObj as unknown as Record<string, string>).toString(),
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-        setFormData({ name: '', email: '', guests: '1', message: '' });
-      }
+      setSubmitted(true);
+      setFormData({ name: '', email: '', guests: '1', message: '' });
     } catch (err) {
       console.error('RSVP submission failed:', err);
     } finally {
