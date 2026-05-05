@@ -96,7 +96,7 @@ export default function CinematicContent() {
               style={{ transform: `rotate(-12deg) ${photoHover === 0 ? 'scale(1.15)' : 'scale(1)'}` }}
             >
               <img
-                src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/70b431ef-41c1-4f31-91be-387273c64dde_Party-Hat.png?v=a03fc819403495eb1c7404a0220d2d0f"
+                src="/party-hat.png"
                 alt="Party hat"
                 className="w-full h-full object-contain drop-shadow-md"
               />
@@ -126,7 +126,7 @@ export default function CinematicContent() {
               style={{ transform: `rotate(8deg) ${photoHover === 1 ? 'scale(1.2)' : 'scale(1)'}` }}
             >
               <img
-                src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/003413c6-11e3-47f6-b4ce-b6db0078528d_Heart.png?v=2daccf140043aa5d7cdac026db038624"
+                src="/heart-sticker.png"
                 alt="Heart sticker"
                 className="w-full h-full object-contain drop-shadow-sm"
               />

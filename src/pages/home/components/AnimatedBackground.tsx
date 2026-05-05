@@ -153,7 +153,7 @@ export default function AnimatedBackground() {
       {/* Landscape watercolor image (desktop only) */}
       <div className="fixed inset-0 z-0 hidden md:block overflow-hidden">
         <img
-          src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/db7955d6-65cc-44c2-b44a-cb6b78d812f9_Background---Website.png?v=5334113970108d5284c00570eb7359cf"
+          src="/background.png"
           alt=""
           className="w-full h-full object-cover"
         />
