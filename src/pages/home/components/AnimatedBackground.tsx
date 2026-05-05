@@ -38,20 +38,22 @@ export default function AnimatedBackground() {
     // iOS Safari requires a play() call before currentTime is seekable.
     // We set playbackRate=0 instead of pause() so iOS never shows the native play button overlay.
     const initVideo = () => {
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            video.playbackRate = 0;
-            video.currentTime = 0;
-            return setupScrollScrub();
-          })
-          .catch(() => {
-            return setupScrollScrub();
-          });
-      } else {
-        video.playbackRate = 0;
-        return setupScrollScrub();
+      try {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              video.playbackRate = 0;
+              video.currentTime = 0;
+              return setupScrollScrub();
+            })
+            .catch(() => setupScrollScrub());
+        } else {
+          video.playbackRate = 0;
+          return setupScrollScrub();
+        }
+      } catch {
+        // Silently fail in restrictive WebViews — static frame shown instead
       }
     };
 

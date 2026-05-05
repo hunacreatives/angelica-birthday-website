@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import legacy from "@vitejs/plugin-legacy";
 import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
 // import { readdyJsxRuntimeProxyPlugin } from "./vite.jsx-runtime-proxy";
@@ -19,6 +20,10 @@ export default defineConfig({
   plugins: [
     // ...proxyPlugins,
     react(),
+    legacy({
+      targets: ['defaults', 'not IE 11', 'fully supports es6-module or chrome >= 60 or firefox >= 60 or safari >= 12'],
+      modernPolyfills: true,
+    }),
     AutoImport({
       imports: [
         {
