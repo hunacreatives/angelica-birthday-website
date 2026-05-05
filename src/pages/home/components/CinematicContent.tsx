@@ -108,7 +108,7 @@ export default function CinematicContent() {
             >
               <div className="w-full h-44 sm:h-48 md:h-64 lg:h-80 overflow-hidden bg-stone-100">
                 <img
-                  src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/9675d747-cf92-4054-ba1e-20dfd14e5969_1.png?v=5bfce22d215928bec322ff450dd45610"
+                  src="/photo-1.png"
                   alt="Gel's photo"
                   className="w-full h-full object-cover object-top"
                 />
@@ -130,7 +130,7 @@ export default function CinematicContent() {
             >
               <div className="w-full h-44 sm:h-48 md:h-64 lg:h-80 overflow-hidden bg-stone-100">
                 <img
-                  src="https://storage.readdy-site.link/project_files/1eb2dcfe-54c4-4a76-9638-7f7316aecfc8/1e3332f2-ceb8-4d56-b496-e86738fcda89_2.png?v=a19e5e097fd212821e5afd1037450857"
+                  src="/photo-2.png"
                   alt="Gel's photo"
                   className="w-full h-full object-cover object-top"
                 />
