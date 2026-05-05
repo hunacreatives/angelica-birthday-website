@@ -76,31 +76,12 @@ export default function RSVP() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >
-            <p className="font-handwritten text-lg md:text-xl text-[#8B9A6E] mb-4">
+            <p className="font-handwritten text-lg md:text-xl text-[#8B9A6E] mb-2">
               Dress Code
             </p>
-            <div className="flex items-center justify-center gap-4 md:gap-5">
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#C0606E] border-2 border-white/50 shadow-sm" />
-                <span className="font-sans text-[10px] md:text-xs text-[#8B9A6E]/70">Rose</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#8B9A6E] border-2 border-white/50 shadow-sm" />
-                <span className="font-sans text-[10px] md:text-xs text-[#8B9A6E]/70">Sage</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#D4727A] border-2 border-white/50 shadow-sm" />
-                <span className="font-sans text-[10px] md:text-xs text-[#8B9A6E]/70">Blush</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F4A6A3] border-2 border-white/50 shadow-sm" />
-                <span className="font-sans text-[10px] md:text-xs text-[#8B9A6E]/70">Peach</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F5EDE6] border-2 border-white/50 shadow-sm" />
-                <span className="font-sans text-[10px] md:text-xs text-[#8B9A6E]/70">Cream</span>
-              </div>
-            </div>
+            <p className="font-sans text-sm md:text-base text-[#8B9A6E]/80 italic">
+              Think soft pastels, garden florals, or anything that feels like a warm spring afternoon ✿
+            </p>
           </div>
         )}
 
