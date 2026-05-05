@@ -72,7 +72,7 @@ export default function RSVP() {
         {/* DRESS CODE — always visible unless submitted */}
         {!submitted && (
           <div
-            className={`-mt-16 md:-mt-20 text-center mb-10 transition-all duration-[1500ms] ease-out ${
+            className={`-mt-24 md:-mt-28 text-center mb-10 transition-all duration-[1500ms] ease-out ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}
           >

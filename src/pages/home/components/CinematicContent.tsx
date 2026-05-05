@@ -86,7 +86,7 @@ export default function CinematicContent() {
           {/* Left Photo */}
           <div
             className="relative transition-all duration-500"
-            style={{ transform: `rotate(-2deg) ${photoHover === 0 ? 'translateY(-10px) rotate(0deg) scale(1.04)' : ''}` }}
+            style={{ transform: photoHover === 0 ? 'rotate(0deg) translateY(-10px) scale(1.05)' : 'rotate(-2deg) translateY(0px) scale(1)' }}
             onMouseEnter={() => setPhotoHover(0)}
             onMouseLeave={() => setPhotoHover(null)}
           >
@@ -111,7 +111,7 @@ export default function CinematicContent() {
           {/* Right Photo */}
           <div
             className="relative transition-all duration-500 -ml-10 sm:-ml-12 md:ml-0"
-            style={{ transform: `rotate(2deg) ${photoHover === 1 ? 'translateY(-10px) rotate(0deg) scale(1.04)' : ''}` }}
+            style={{ transform: photoHover === 1 ? 'rotate(0deg) translateY(-10px) scale(1.05)' : 'rotate(2deg) translateY(0px) scale(1)' }}
             onMouseEnter={() => setPhotoHover(1)}
             onMouseLeave={() => setPhotoHover(null)}
           >
